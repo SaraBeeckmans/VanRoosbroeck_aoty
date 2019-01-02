@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">VanRoosBroeck</string>
+
+    <string-array name="Drivinglicense">
+        <item>AM</item>
+        <item>A1</item>
+        <item>A2</item>
+        <item>A</item>
+    </string-array>
+
+    <string-array name="brands">
+        <item>Yamaha</item>
+        <item>Honda</item>
+    </string-array>
+</resources>
