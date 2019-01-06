@@ -29,7 +29,7 @@ public class MotorValues {
         if (this.name != null)
         this.name = name;
         else
-            this.name = "onbekend";
+            this.name = "Onbekend";
     }
 
 
@@ -38,10 +38,10 @@ public class MotorValues {
     }
 
     public void setYear_build(Integer year_build) {
-        if (year_build!= null)
+       // if (year_build!= null)
         this.year_build = year_build;
-        else
-            this.year_build=0;
+        //else
+          //  this.year_build=0;
     }
 
     public Float getPrice_buy() {
@@ -49,10 +49,10 @@ public class MotorValues {
     }
 
     public void setPrice_buy(Float price_buy) {
-        if(this.price_buy!= null)
+        //if(this.price_buy!= null)
         this.price_buy = price_buy;
-        else
-            this.price_buy = 0.0f ;
+        //else
+           // this.price_buy = 0.0f ;
     }
 
     //TODO: Floats omvormen naar doubles
@@ -62,10 +62,10 @@ public class MotorValues {
     }
 
     public void setPrice_sale(Float price_sale) {
-        if(this.price_sale!= null)
+       // if(this.price_sale!= null)
             this.price_sale = price_sale;
-        else
-            this.price_sale = 0.0f ;
+       // else
+          //  this.price_sale = 0.0f ;
     }
 
     public String getDescriptioin() {
@@ -73,10 +73,10 @@ public class MotorValues {
     }
 
     public void setDescriptioin(String descriptioin) {
-        if (this.descriptioin!=null)
+      //  if (this.descriptioin!=null)
         this.descriptioin = descriptioin;
-        else
-            this.descriptioin="Geen beschrijving";
+       // else
+         //   this.descriptioin="Geen beschrijving";
     }
 
     public Integer getWaranty() {
@@ -84,10 +84,10 @@ public class MotorValues {
     }
 
     public void setWaranty(Integer waranty) {
-        if (this.waranty!=null)
+      //  if (this.waranty!=null)
         this.waranty = waranty;
-        else
-            this.waranty=0;
+       // else
+         //   this.waranty=0;
     }
 
     public String getMotorsize() {
@@ -95,10 +95,10 @@ public class MotorValues {
     }
 
     public void setMotorsize(String motorsize) {
-        if(this.motorsize!= null)
+       // if(this.motorsize!= null)
         this.motorsize = motorsize;
-        else
-            this.motorsize="";
+        //else
+          //  this.motorsize="";
     }
 
     public String getPower() {
@@ -106,10 +106,10 @@ public class MotorValues {
     }
 
     public void setPower(String power) {
-        if(this.power != null)
+       // if(this.power != null)
         this.power = power;
-        else
-            this.power = "";
+       // else
+         //   this.power = "";
     }
 
     public Integer getKm() {
@@ -117,10 +117,10 @@ public class MotorValues {
     }
 
     public void setKm(Integer km) {
-        if(this.km!=null)
+       // if(this.km!=null)
         this.km = km;
-        else
-            this.km=0;
+       // else
+         //   this.km=0;
     }
 
     public Boolean getFirst_owner(){

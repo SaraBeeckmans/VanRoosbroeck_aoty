@@ -90,6 +90,8 @@ public class MotorFormActivity extends AppCompatActivity {
 
                 new Odooconnection().execute(motorValues, null, null);
 
+                startActivity(new Intent(MotorFormActivity.this, ProgressActivity.class));
+
             }
 
         });
