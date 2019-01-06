@@ -84,7 +84,6 @@ public class Odooconnection extends AsyncTask<MotorValues, Void, Void>{
             );
 
 
-//            todo: 3 * foto opladen en koppelen aan res
             uploadDetailPicture(motorValues.getFilename_1(), db, password, common_config, uid, models, res);
             uploadDetailPicture(motorValues.getFilename_2(), db, password, common_config, uid, models, res);
             uploadDetailPicture(motorValues.getFilename_3(), db, password, common_config, uid, models, res);

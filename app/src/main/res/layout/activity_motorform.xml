@@ -351,11 +351,9 @@
             android:layout_width="200dp"
             android:layout_height="133dp"
             android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:background="@color/colorAccent"
+            android:background="?attr/colorPrimary"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/divider"
-            tools:srcCompat="@tools:sample/backgrounds/scenic[8]" />
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
 
         <Button
             android:id="@+id/btn_aanmaken"
@@ -415,11 +413,10 @@
             android:layout_width="200dp"
             android:layout_height="133dp"
             android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/divider2"
-            app:srcCompat="@color/colorPrimary" />
+            app:srcCompat="?attr/colorPrimary" />
 
         <Button
             android:id="@+id/btnPic1"
@@ -451,11 +448,10 @@
             android:layout_width="200dp"
             android:layout_height="133dp"
             android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/divider3"
-            app:srcCompat="@color/colorPrimaryDark" />
+            app:srcCompat="?attr/colorPrimary" />
 
         <Button
             android:id="@+id/btnPic2"
@@ -487,11 +483,10 @@
             android:layout_width="200dp"
             android:layout_height="133dp"
             android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/divider4"
-            app:srcCompat="@color/colorAccent" />
+            app:srcCompat="?attr/colorPrimary" />
 
         <View
             android:id="@+id/divider5"

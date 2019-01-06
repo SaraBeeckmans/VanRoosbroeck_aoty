@@ -68,21 +68,62 @@ public class MotorFormActivity extends AppCompatActivity {
 
 
                 MotorValues motorValues = new MotorValues();
+
+                //Strings
                 motorValues.setName(name_text.getText().toString());
                 motorValues.setDescriptioin(description_text.getText().toString());
-
-
-                motorValues.setPrice_sale(Float.parseFloat(price_sale_text.getText().toString()));
-                motorValues.setPrice_buy(Float.parseFloat(price_buy_text.getText().toString()));
-                motorValues.setYear_build(Integer.parseInt(year_build_text.getText().toString()));
-                motorValues.setPower(power_text.getText().toString());
-                motorValues.setWaranty(Integer.parseInt(waranty_text.getText().toString()));
-                motorValues.setKm(Integer.parseInt(km_text.getText().toString()));
                 motorValues.setMotorsize(motorsize_text.getText().toString());
+                motorValues.setPower(power_text.getText().toString());
+
+                //Floats
+
+                if(price_sale_text.getText().toString().equals("")){
+                    motorValues.setPrice_sale(0.0f);
+                }
+                else {
+                    motorValues.setPrice_sale(Float.parseFloat(price_sale_text.getText().toString()));
+                }
+                if(price_buy_text.getText().toString().equals("")){
+                    motorValues.setPrice_buy(0.0f);
+                }
+                else {
+                    motorValues.setPrice_buy(Float.parseFloat(price_buy_text.getText().toString()));
+                }
+
+
+
+                //integers
+                if(year_build_text.getText().toString().equals("")){
+                    motorValues.setYear_build(0);
+                }
+                else {
+                    motorValues.setYear_build(Integer.parseInt(year_build_text.getText().toString()));
+                }
+
+                if(waranty_text.getText().toString().equals("")){
+                    motorValues.setWaranty(0);
+                }
+                else {
+                    motorValues.setWaranty(Integer.parseInt(waranty_text.getText().toString()));
+                }
+
+                if(km_text.getText().toString().equals("")){
+                    motorValues.setKm(0);
+                }
+                else {
+                    motorValues.setKm(Integer.parseInt(km_text.getText().toString()));
+                }
+
+
+
+                //Checkboxes
                 motorValues.setFirst_owner(first_owner_check.isChecked());
                 motorValues.setSold(sold_check.isChecked());
                 motorValues.setWebsite(website_check.isChecked());
                 motorValues.setHome_pagina(home_Pagina_check.isChecked());
+
+
+                //Photos
                 motorValues.setFilename_main(filename_main);
                 motorValues.setFilename_1(filename_1);
                 motorValues.setFilename_2(filename_2);

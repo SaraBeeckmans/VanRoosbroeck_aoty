@@ -37,12 +37,11 @@ public class MainPictureActivity extends AppCompatActivity {
                 photoFile = createImageFile();
             } catch (IOException ex) {
                 // Error occurred while creating the File
-//                TODO: afhandelen van de fout nog net iets beter doen
                 Log.e("Main foto", "dispatchTakePictureIntent: ", ex);
             }
             // Continue only if the File was successfully created
             if (photoFile != null) {
-//                todo: Onderstaande lijn geeft nog een fout
+
                 Uri photoURI = FileProvider.getUriForFile(this,
                         "com.example.sara.vanroosbroeck.fileprovider",
                         photoFile);
