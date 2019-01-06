@@ -11,5 +11,8 @@
     <string-array name="brands">
         <item>Yamaha</item>
         <item>Honda</item>
+        <item>BMW</item>
+        <item>Ducati</item>
+        <item>Suzuki</item>
     </string-array>
 </resources>

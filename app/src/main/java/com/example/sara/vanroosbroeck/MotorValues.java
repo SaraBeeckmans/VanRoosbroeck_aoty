@@ -14,6 +14,9 @@ public class MotorValues {
     private Boolean sold;
     private Boolean website;
     private Boolean home_pagina;
+    private Integer Brand_id;
+    private String Drivinglicense;
+
 
     private String filename_main;
     private String filename_1;
@@ -182,4 +185,19 @@ public class MotorValues {
     }
 
 
+    public Integer getBrand_id() {
+        return Brand_id;
+    }
+
+    public void setBrand_id(Integer brand_id) {
+        Brand_id = brand_id;
+    }
+
+    public String getDrivinglicense() {
+        return Drivinglicense;
+    }
+
+    public void setDrivinglicense(String drivinglicense) {
+        Drivinglicense = drivinglicense;
+    }
 }

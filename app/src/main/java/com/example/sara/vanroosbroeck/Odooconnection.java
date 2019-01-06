@@ -67,7 +67,7 @@ public class Odooconnection extends AsyncTask<MotorValues, Void, Void>{
                                                                                                                          put("price_buy", motorValues.getPrice_buy().toString());
                                                                                                                          put("waranty", motorValues.getWaranty().toString());
                                                                                                                          put("description", motorValues.getDescriptioin());
-//                                                                                                                         put("drivers_licence", "A1");
+                                                                                                                         put("drivers_licence", motorValues.getDrivinglicense());
                                                                                                                          put("motorsize", motorValues.getMotorsize());
                                                                                                                          put("km", motorValues.getKm().toString());
                                                                                                                          put("power", motorValues.getPower());
@@ -75,7 +75,7 @@ public class Odooconnection extends AsyncTask<MotorValues, Void, Void>{
                                                                                                                          put("sold", motorValues.getSold());
                                                                                                                          put("publish_on_website", motorValues.getWebsite());
                                                                                                                          put("publish_on_homepage", motorValues.getHome_pagina());
-//                                                                                                                         put("secondhand_brands_id", 2);
+                                                                                                                         put("secondhand_brands_id", motorValues.getBrand_id());
                                                                                                                          put("main_picture", fileAsString_picture_main);
 //                                etc....
                                                                                                                      }}

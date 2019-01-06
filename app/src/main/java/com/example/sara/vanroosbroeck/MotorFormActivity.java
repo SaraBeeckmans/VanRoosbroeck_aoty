@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 public class MotorFormActivity extends AppCompatActivity {
 
@@ -50,6 +52,11 @@ public class MotorFormActivity extends AppCompatActivity {
         final EditText km_text =(EditText) findViewById(R.id.txtKilometerstand);
 
         final EditText power_text = (EditText) findViewById(R.id.txtVermogen);
+
+
+        //spinners
+        final Spinner Brand_spinner = (Spinner) findViewById(R.id.spinnerMerk);
+        final Spinner License_spinner = (Spinner) findViewById(R.id.spinnerRijbewijs);
 
 
         //checkboxes
@@ -115,6 +122,31 @@ public class MotorFormActivity extends AppCompatActivity {
                 }
 
 
+
+
+              //spinners
+                switch (Brand_spinner.getSelectedItem().toString().toUpperCase()){
+                    case "YAMAHA":
+                       motorValues.setBrand_id(1);
+                        break;
+                    case "HONDA":
+                        motorValues.setBrand_id(2);
+                        break;
+                    case "BMW":
+                        motorValues.setBrand_id(3);
+                        break;
+                    case "DUCATI":
+                        motorValues.setBrand_id(4);
+                        break;
+                    case "SUZUKI":
+                        motorValues.setBrand_id(5);
+                        break;
+
+                        default:
+                            break;
+                }
+
+                motorValues.setDrivinglicense(License_spinner.getSelectedItem().toString());
 
                 //Checkboxes
                 motorValues.setFirst_owner(first_owner_check.isChecked());
@@ -204,7 +236,7 @@ public class MotorFormActivity extends AppCompatActivity {
                 default:
                     break;
             }
-            setPic(mImageView, str_fileName);
+            Utilities.setPic(mImageView, str_fileName);
         }
 
 
@@ -212,30 +244,6 @@ public class MotorFormActivity extends AppCompatActivity {
     }
 
 
-//todo: Verzetten naar een utility class + code in NeemFoto ook verwijderen en utility aantoepen
-    private void setPic(ImageView mImageView, String pathToFile) {
-        // Get the dimensions of the View
-        int targetW = mImageView.getWidth();
-        int targetH = mImageView.getHeight();
-
-        // Get the dimensions of the bitmap
-        BitmapFactory.Options bmOptions = new BitmapFactory.Options();
-        bmOptions.inJustDecodeBounds = true;
-        BitmapFactory.decodeFile(pathToFile, bmOptions);
-        int photoW = bmOptions.outWidth;
-        int photoH = bmOptions.outHeight;
-
-        // Determine how much to scale down the image
-        int scaleFactor = Math.min(photoW/targetW, photoH/targetH);
-
-        // Decode the image file into a Bitmap sized to fill the View
-        bmOptions.inJustDecodeBounds = false;
-        bmOptions.inSampleSize = scaleFactor;
-        bmOptions.inPurgeable = true;
-
-        Bitmap bitmap = BitmapFactory.decodeFile(pathToFile, bmOptions);
-        mImageView.setImageBitmap(bitmap);
-    }
 
 
 }
